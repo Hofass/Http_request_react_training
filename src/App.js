@@ -4,6 +4,7 @@ import MoviesList from './components/MoviesList';
 import './App.css';
 
 function App() {
+
   const dummyMovies = [
     {
       id: 1,
@@ -18,7 +19,11 @@ function App() {
       releaseDate: '2021-05-19',
     },
   ];
-
+  function fetchMoviesHandler(){
+    fetch('https://swapi.dev/api/films/').then(response=>{ returne response.json()}).then(data=>{
+      
+    })
+  }
   return (
     <React.Fragment>
       <section>
